@@ -14,17 +14,6 @@ public class Utils {
     System.out.println();
   }
 
-  public static int[] randomArray(int size){
-    //Initialize array with random number
-    int[] arr = new int[size];
-    Random random = new Random();
-    for (int i = 0; i < size; i++) {
-      arr[i] = random.nextInt(1000);
-    }
-    println("Random array:");
-    printArray(arr);
-    return arr;
-  }
   public static void printArray(int[][] arr) {
     for (int i = 0; i < arr.length; i++) {
       printArray(arr[i]);
@@ -39,13 +28,27 @@ public class Utils {
     return result;
   }
 
-  static public void print(String s){
+  static public void print(String s) {
     System.out.print(s);
   }
-  static public void println(String s){
+
+  static public void println(String s) {
     System.out.println(s);
   }
-  static public void println(){
+
+  static public void println() {
     System.out.println();
+  }
+
+  public static int[] randomArray(int size) {
+    //Initialize array with random number
+    int[] arr = new int[size];
+    Random random = new Random();
+    for (int i = 0; i < size; i++) {
+      arr[i] = random.nextInt(1000);
+    }
+    println("Random array:");
+    printArray(arr);
+    return arr;
   }
 }
