@@ -1,6 +1,6 @@
 package com.codenext.util;
 
-public class ArrayUtils {
+public class Utils {
 
   public static void printArray(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
@@ -24,5 +24,15 @@ public class ArrayUtils {
       result += arr[i];
     }
     return result;
+  }
+
+  static public void print(String s){
+    System.out.print(s);
+  }
+  static public void println(String s){
+    System.out.println(s);
+  }
+  static public void println(){
+    System.out.println();
   }
 }

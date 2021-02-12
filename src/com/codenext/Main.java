@@ -1,6 +1,6 @@
 package com.codenext;
 
-import com.codenext.util.ArrayUtils;
+import com.codenext.util.Utils;
 
 public class Main {
 
@@ -12,7 +12,7 @@ public class Main {
             {98,89,90}
         };
 
-        ArrayUtils.printArray(scores);
-        System.out.println("Total of row 0: " + ArrayUtils.sum(scores[0]));
+        Utils.printArray(scores);
+        System.out.println("Total of row 0: " + Utils.sum(scores[0]));
     }
 }

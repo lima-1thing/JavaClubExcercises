@@ -1,6 +1,5 @@
 package com.codenext.day3;
 
-import com.codenext.util.ArrayUtils;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 package com.codenext.day3;
 
-import com.codenext.util.ArrayUtils;
+import com.codenext.util.Utils;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class RevertArray {
     }
 
     System.out.println("Array has been initialized as below:");
-    ArrayUtils.printArray(arr);
+    Utils.printArray(arr);
 
     for(int i=0; i<arr.length/2; i++) {
       //swap arr[i] with arr[arr.length-i-1]
@@ -24,6 +24,6 @@ public class RevertArray {
       arr[arr.length-i-1] = temp;
     }
     System.out.println("The reverted array is as below:");
-    ArrayUtils.printArray(arr);
+    Utils.printArray(arr);
   }
 }
