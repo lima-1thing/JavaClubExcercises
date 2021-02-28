@@ -1,4 +1,4 @@
-package com.codenext.day5.day6;
+package com.codenext.day6;
 
 import java.util.ArrayList;
 import java.util.HashMap;
