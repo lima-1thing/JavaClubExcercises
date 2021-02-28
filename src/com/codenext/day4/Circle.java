@@ -47,7 +47,7 @@ public class Circle {
   static void circle(int r){
     for(int i=0; i<r; i++){
       int y = r - i;
-      int x = (int)( Math.sqrt(r*r-y*y) + 0.5);
+      int x = (int)( Math.sqrt(r*r-y*y) + 0.5); //r^2=x^2+y^2
       drawCircleRow(r, x);
     }
 
