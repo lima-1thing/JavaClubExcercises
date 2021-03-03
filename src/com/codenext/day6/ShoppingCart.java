@@ -1,5 +1,7 @@
 package com.codenext.day6;
 
+import static com.codenext.util.Utils.println;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -31,21 +33,25 @@ public class ShoppingCart {
 
   public static void main(String[] args) {
     ArrayList<HashMap<String, String>> cart = new ArrayList<>();
+
+    println("\nInitialize cart..");
     add(cart, "Apple", 2.49, 5, "image_apple");
     add(cart, "Milk", 3.99, 2, "image_milk");
     add(cart, "Bread", 5.49, 1, "image_bread");
 
-    System.out.println(cart);
-    System.out.println("Total cost:" + totalPrice(cart));
+    println(cart.toString());
+    println("Total cost:" + totalPrice(cart));
 
     //Add cheese
+    println("\nAdding cheese..");
     add(cart, "Cheese", 8.99, 2, "image_cheese");
-    System.out.println(cart);
-    System.out.println("Total cost:" + totalPrice(cart));
+    println(cart.toString());
+    println("Total cost:" + totalPrice(cart));
 
     //Remove Milk
+    println("\nRemove milk..");
     remove(cart, 1);
-    System.out.println(cart);
-    System.out.println("Total cost:" + totalPrice(cart));
+    println(cart.toString());
+    println("Total cost:" + totalPrice(cart));
   }
 }
