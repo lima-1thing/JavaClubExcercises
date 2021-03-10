@@ -1,7 +1,5 @@
 package com.codenext.day7;
 
-import java.util.HashMap;
-
 public class Merchandise {
 
   public Merchandise(String name, double unitPrice, int count,
