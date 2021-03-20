@@ -10,7 +10,10 @@ public class ShapeTest {
     shapes.add(new IsoscelesTriangle(100,150));
     shapes.add(new EquilateralTriangle(100));
     shapes.add(new Rectangle(100,200));
+    shapes.add(new Circle(100));
 
-    System.out.println(shapes);
+    for(Shape shape: shapes){
+      System.out.println(shape);
+    }
   }
 }
