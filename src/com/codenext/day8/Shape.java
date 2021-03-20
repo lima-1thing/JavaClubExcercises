@@ -1,6 +1,6 @@
 package com.codenext.day8;
 
-public class Shape {
+public abstract class Shape {
 
   private String shapeType;
 
@@ -8,13 +8,9 @@ public class Shape {
     this.shapeType = shapeType;
   }
 
-  public double area() {
-    return 0;
-  }
+  public abstract double area();
 
-  public double perimeter() {
-    return 0;
-  }
+  public abstract double perimeter();
 
   @Override
   public String toString() {
