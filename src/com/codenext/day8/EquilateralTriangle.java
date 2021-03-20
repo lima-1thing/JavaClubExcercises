@@ -1,6 +1,9 @@
 package com.codenext.day8;
 
 public class EquilateralTriangle {
+
+  private double a, b, c;
+
   public IsoscelesTriangle(double equalSide, double c) {
     this.a = equalSide;
     this.b = equalSide;
@@ -15,6 +18,5 @@ public class EquilateralTriangle {
   public double perimeter() {
     return a + b + c;
   }
-  private double a, b, c;
 
 }

@@ -2,7 +2,9 @@ package com.codenext.day8;
 
 import java.security.InvalidParameterException;
 
-public class Triangle extends Shape{
+public class Triangle extends Shape {
+
+  private double a, b, c;
 
   public Triangle(double a, double b, double c) {
     super("Triangle");
@@ -49,16 +51,16 @@ public class Triangle extends Shape{
     return c;
   }
 
-  public void setC(double newC) {
-    validate(this.a, this.b, newC);
-    this.c = newC;
-  }
-
   // @Override
   // public String toString() {
   //   return String.format("Triangle with side a=%.2f, b=%.2f, c=%.2f.",
   //       this.a, this.b, this.c);
   // }
+
+  public void setC(double newC) {
+    validate(this.a, this.b, newC);
+    this.c = newC;
+  }
 
   private void validate(double a, double b, double c) {
     if (a + b <= c || b + c <= a || a + c <= b) {
@@ -70,6 +72,4 @@ public class Triangle extends Shape{
   private double height() { //private method
     return area() * 2 / b;
   }
-
-  private double a, b, c;
 }

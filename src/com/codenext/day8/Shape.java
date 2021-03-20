@@ -1,9 +1,13 @@
 package com.codenext.day8;
 
 public class Shape {
-  public Shape(String shapeType){
+
+  private String shapeType;
+
+  public Shape(String shapeType) {
     this.shapeType = shapeType;
   }
+
   public double area() {
     return 0;
   }
@@ -17,8 +21,7 @@ public class Shape {
     return "Shape:" + shapeType + " area:" + this.area() + " perimeter:" + perimeter();
   }
 
-  protected void setShapeType(String shapeType){
+  protected void setShapeType(String shapeType) {
     this.shapeType = shapeType;
   }
-  private String shapeType;
 }
