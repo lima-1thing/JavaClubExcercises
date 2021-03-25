@@ -7,9 +7,9 @@ import java.util.Random;
 
 public class GameOfLife {
 
-  private final int boardSize = 20;
-  private final int initPct = 20;
-  private final boolean[][] board;
+  private final int boardSize = 10;
+  private final int initPct = 50;
+  private boolean[][] board;
 
   GameOfLife() {
     board = new boolean[boardSize][boardSize];
@@ -26,18 +26,21 @@ public class GameOfLife {
   }
 
   public void nextGeneration() {
+    boolean[][] newBoard = new boolean[boardSize][boardSize];
     for (int i = 0; i < board.length; i++) {
       for (int j = 0; j < board[i].length; j++) {
         int neighbors = getNeighbors(i, j);
+        newBoard[i][j] = board[i][j];
         if (board[i][j]) {
           if (neighbors < 2 || neighbors > 3) {
-            board[i][j] = false;
+            newBoard[i][j] = false;
           }
         } else if (neighbors == 3) {
-          board[i][j] = true;
+          newBoard[i][j] = true;
         }
       }
     }
+    this.board=newBoard;
   }
 
   /**
